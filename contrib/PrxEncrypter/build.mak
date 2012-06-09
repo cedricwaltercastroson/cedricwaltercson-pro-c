@@ -31,7 +31,7 @@ STRIP    = psp-strip
 MKSFO    = mksfo
 PACK_PBP = pack-pbp
 FIXUP    = psp-fixup-imports
-ENC		 = /usr/local/pspdev/bin/PrxEncrypter
+ENC		  = PrxEncrypter
 
 # Add in PSPSDK includes and libraries.
 INCDIR   := $(INCDIR) . $(PSPSDK)/include
