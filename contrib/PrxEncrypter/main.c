@@ -300,7 +300,7 @@ int main(int argc, char **argv)
 
 	if(argc < 2)
 	{
-		printf("USAGE: [exe] [prx]\n");
+		printf("USAGE: PrxEncrypter [prx]\n");
 		return 0;
 	}
 
