@@ -6,7 +6,13 @@ CFLAGS = -Os -G0 -Wall -fno-pic
 CXXFLAGS = $(CFLAGS) -fno-exceptions -fno-rtti
 ASFLAGS = $(CFLAGS)
 
+ifeq ($(CONFIG_639), 1)
 PSP_FW_VERSION = 639
+endif
+
+ifeq ($(CONFIG_660), 1)
+PSP_FW_VERSION = 660
+endif
 
 BUILD_PRX = 1
 PRX_EXPORTS = exports.exp
