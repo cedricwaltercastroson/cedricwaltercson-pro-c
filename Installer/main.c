@@ -663,12 +663,12 @@ version_OK:
 				key = ctl.Buttons;
 			}
 
-			printf("Now reboot to " VERSION_STR " :)\n");
+			printf("Now rebooting to " VERSION_STR " :)\n");
 			start_reboot(1);
 		}
 	} else if (key & PSP_CTRL_TRIANGLE) {
 		ret = uninstall_cfw();
-		printf("Now reboot to OFW :)\n");
+		printf("Now rebooting to OFW :)\n");
 		sceKernelDelayThread(1000000);
 		start_reboot(0);
 	}
